@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:16
+    container_name: tech_playground_db
+    restart: always
+    environment:
+      POSTGRES_DB: tech_playground
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - tech-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    volumes:
+      - ./:/usr/src/backend 
+    command: yarn start:dev
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: tech_playground_backend
+    depends_on:
+        db:
+          condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@db:5432/tech_playground
+    ports:
+      - "3000:3000"
+    networks:
+      - tech-network
+
+networks:
+  tech-network:
+    driver: bridge
+
+volumes:
+  pgdata:
