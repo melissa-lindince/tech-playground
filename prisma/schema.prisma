@@ -1,0 +1,63 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Employees {
+  id String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+
+  nome               String
+  email              String
+  email_corporativo  String
+  area         String
+  cargo        String
+  funcao       String
+  localidade   String
+  tempo_de_empresa String
+  genero           String
+  geracao          String?
+
+  n0_empresa      String
+  n1_diretoria    String?
+  n2_gerencia     String?
+  n3_coordenacao  String?
+  n4_area         String
+
+  data_resposta DateTime
+
+  interesse_no_cargo        Int?
+  comentarios_interesse    String?
+
+  contribuicao             Int?
+  comentarios_contribuicao String?
+
+  aprendizado_desenvolvimento     Int?
+  comentarios_aprendizado         String?
+
+  feedback             Int?
+  comentarios_feedback String?
+
+  interacao_gestor             Int?
+  comentarios_interacao        String?
+
+  clareza_carreira             Int?
+  comentarios_carreira         String?
+
+  expectativa_permanencia             Int?
+  comentarios_permanencia             String?
+
+  enps        Int?
+  enps_aberto String?
+
+  @@map("employees")
+}

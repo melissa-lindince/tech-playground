@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:20
 
 WORKDIR /usr/src/backend
 
@@ -6,4 +6,4 @@ COPY package.json yarn.lock ./
 
 RUN yarn install
 
-CMD ["yarn", "start:dev"]
+CMD ["sh", "-c", "yarn prisma migrate dev && yarn start:dev"]

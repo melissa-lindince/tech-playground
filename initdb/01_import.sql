@@ -34,5 +34,5 @@ COPY employees (
 )
 FROM '/docker-entrypoint-initdb.d/data.csv'
 DELIMITER ';'
-CSV HEADER;
+CSV HEADER
 NULL '-';
