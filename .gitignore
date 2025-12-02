@@ -4,6 +4,7 @@
 /build
 /tmp
 /coverage
+/prisma/generated
 
 # Logs
 logs

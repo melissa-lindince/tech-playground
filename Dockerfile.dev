@@ -5,5 +5,10 @@ WORKDIR /usr/src/backend
 COPY package.json yarn.lock ./
 
 RUN yarn install
+COPY prisma ./prisma
+COPY src ./src
 
-CMD ["sh", "-c", "yarn prisma migrate dev && yarn start:dev"]
+RUN yarn add @prisma/client
+RUN yarn prisma generate
+
+CMD ["sh", "-c", "yarn start:dev"]
