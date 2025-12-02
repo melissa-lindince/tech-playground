@@ -56,13 +56,11 @@ export class EmployeesService {
     });
   }
 
-  findAll(take = 20, skip = 0) {
+  findAll() {
     return this.prisma.employees.findMany({
       orderBy: {
         data_resposta: 'desc',
       },
-      take,
-      skip,
     });
   }
 
