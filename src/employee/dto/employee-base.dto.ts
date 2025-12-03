@@ -51,7 +51,7 @@ export class EmployeeBaseDto {
   @IsString()
   geracao: string;
 
-  @ApiProperty({ example: 'Company Spy x family' })
+  @ApiProperty({ example: 'Empresa ABC' })
   @IsString({ message: 'n0_empresa must be a string' })
   @IsNotEmpty({ message: 'n0_empresa is required' })
   n0_empresa: string;

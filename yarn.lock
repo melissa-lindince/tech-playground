@@ -1038,6 +1038,15 @@
     load-esm "1.0.3"
     tslib "2.8.1"
 
+"@nestjs/config@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/config/-/config-4.0.2.tgz#a2777a1fd2d0d594bab3953f50fbca95c14cce52"
+  integrity sha512-McMW6EXtpc8+CwTUwFdg6h7dYcBUpH5iUILCclAsa+MbCEvC9ZKu4dCHRlJqALuhjLw97pbQu62l4+wRwGeZqA==
+  dependencies:
+    dotenv "16.4.7"
+    dotenv-expand "12.0.1"
+    lodash "4.17.21"
+
 "@nestjs/core@^11.0.1":
   version "11.1.9"
   resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-11.1.9.tgz#7a77ded789709e194c4f118e3d9bf5182136b076"
@@ -1125,7 +1134,7 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.2.9.tgz#d229a7b7f9dac167a156992ef23c7f023653f53b"
   integrity sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==
 
-"@prisma/adapter-pg@^7.0.1":
+"@prisma/adapter-pg@^7.0.0":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@prisma/adapter-pg/-/adapter-pg-7.0.1.tgz#44e67f1b47b16ac7451e2697934ea64f65ce9b48"
   integrity sha512-01GpPPhLMoDMF4ipgfZz0L87fla/TV/PBQcmHy+9vV1ml6gUoqF8dUIRNI5Yf2YKpOwzQg9sn8C7dYD1Yio9Ug==
@@ -1139,7 +1148,7 @@
   resolved "https://registry.yarnpkg.com/@prisma/client-runtime-utils/-/client-runtime-utils-7.0.1.tgz#db5e9e0e48224693e6b89d5d3cd10a1ff1799ba2"
   integrity sha512-R26BVX9D/iw4toUmZKZf3jniM/9pMGHHdZN5LVP2L7HNiCQKNQQx/9LuMtjepbgRqSqQO3oHN0yzojHLnKTGEw==
 
-"@prisma/client@^7.0.1":
+"@prisma/client@^7.0.0":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-7.0.1.tgz#a48edb13851b1e496e22c4799383560fa85e662c"
   integrity sha512-O74T6xcfaGAq5gXwCAvfTLvI6fmC3and2g5yLRMkNjri1K8mSpEgclDNuUWs9xj5AwNEMQ88NeD3asI+sovm1g==
@@ -2249,9 +2258,9 @@ camelcase@^6.3.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001754:
-  version "1.0.30001757"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001757.tgz#a46ff91449c69522a462996c6aac4ef95d7ccc5e"
-  integrity sha512-r0nnL/I28Zi/yjk1el6ilj27tKcdjLsNqAOZr0yVjWPrSQyHgKI2INaEWw21bAQSv2LXRt1XuCS/GomNpWOxsQ==
+  version "1.0.30001759"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001759.tgz#d569e7b010372c6b0ca3946e30dada0a2e9d5006"
+  integrity sha512-Pzfx9fOKoKvevQf8oCXoyNRQ5QyxJj+3O0Rqx2V5oxT61KGx8+n6hV/IUyJeifUci2clnmmKVpvtiqRzgiWjSw==
 
 chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
@@ -2588,7 +2597,19 @@ diff@^4.0.1:
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
-dotenv@^16.6.1:
+dotenv-expand@12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-12.0.1.tgz#44bdfa204a368100689ec35d7385755f599ceeb1"
+  integrity sha512-LaKRbou8gt0RNID/9RoI+J2rvXsBRPMV7p+ElHlPhcSARbCPDYcYG2s1TIzAfWv4YSgyY5taidWzzs31lNV3yQ==
+  dependencies:
+    dotenv "^16.4.5"
+
+dotenv@16.4.7:
+  version "16.4.7"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.7.tgz#0e20c5b82950140aa99be360a8a5f52335f53c26"
+  integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
+
+dotenv@^16.4.5, dotenv@^16.6.1:
   version "16.6.1"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.6.1.tgz#773f0e69527a8315c7285d5ee73c4459d20a8020"
   integrity sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==
@@ -4649,9 +4670,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^3.4.2:
-  version "3.7.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.7.3.tgz#99a8891f6c990cfa54bcff2a0d276e6f845e59ab"
-  integrity sha512-QgODejq9K3OzoBbuyobZlUhznP5SKwPqp+6Q6xw6o8gnhr4O85L2U915iM2IDcfF2NPXVaM9zlo9tdwipnYwzg==
+  version "3.7.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.7.4.tgz#d2f8335d4b1cec47e1c8098645411b0c9dff9c0f"
+  integrity sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==
 
 pretty-format@30.2.0, pretty-format@^30.0.0:
   version "30.2.0"
@@ -4662,7 +4683,7 @@ pretty-format@30.2.0, pretty-format@^30.0.0:
     ansi-styles "^5.2.0"
     react-is "^18.3.1"
 
-prisma@^7.0.1:
+prisma@^7.0.0:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/prisma/-/prisma-7.0.1.tgz#818b839a8685cdba0d664c66bce2a5c688ebf0af"
   integrity sha512-zp93MdFMSU1IHPEXbUHVUuD8wauh2BUm14OVxhxGrWJQQpXpda0rW4VSST2bci4raoldX64/wQxHKkl/wqDskQ==
@@ -5195,6 +5216,20 @@ swagger-ui-dist@5.30.2:
   integrity sha512-HWCg1DTNE/Nmapt+0m2EPXFwNKNeKK4PwMjkwveN/zn1cV2Kxi9SURd+m0SpdcSgWEK/O64sf8bzXdtUhigtHA==
   dependencies:
     "@scarf/scarf" "=1.4.0"
+
+swagger-ui-dist@>=5.0.0:
+  version "5.30.3"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-5.30.3.tgz#b65d1b689193ded72e6f12692c63e87d7d657b21"
+  integrity sha512-giQl7/ToPxCqnUAx2wpnSnDNGZtGzw1LyUw6ZitIpTmdrvpxKFY/94v1hihm0zYNpgp1/VY0jTDk//R0BBgnRQ==
+  dependencies:
+    "@scarf/scarf" "=1.4.0"
+
+swagger-ui-express@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/swagger-ui-express/-/swagger-ui-express-5.0.1.tgz#fb8c1b781d2793a6bd2f8a205a3f4bd6fa020dd8"
+  integrity sha512-SrNU3RiBGTLLmFU8GIJdOdanJTl4TOmT27tt3bWWHppqYmAZ6IDuEuBvMU6nZq0zLEe6b/1rACXCgLZqO6ZfrA==
+  dependencies:
+    swagger-ui-dist ">=5.0.0"
 
 symbol-observable@4.0.0:
   version "4.0.0"

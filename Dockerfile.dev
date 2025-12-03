@@ -3,12 +3,11 @@ FROM node:20
 WORKDIR /usr/src/backend
 
 COPY package.json yarn.lock ./
-
 RUN yarn install
+
 COPY prisma ./prisma
-COPY src ./src
+COPY prisma.config.ts ./prisma.config.ts
 
-RUN yarn add @prisma/client
-RUN yarn prisma generate
+COPY . .
 
-CMD ["sh", "-c", "yarn start:dev"]
+CMD ["yarn", " yarn start:dev"]
