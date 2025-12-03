@@ -15,7 +15,7 @@ export class EmployeeEvaluationDto {
   @IsOptional()
   interesse_no_cargo?: number;
   
-  @ApiProperty({ example: 'Gostaria de participar de projetos interdepartamentais para ganhar experiência.', required: false })
+  @ApiProperty({ example: 'Gostaria de participar de projetos...', required: false })
   @IsString({ message: 'comentarios_interesse must be a string' })
   @IsOptional()
   comentarios_interesse?: string;
@@ -72,7 +72,7 @@ export class EmployeeEvaluationDto {
   @IsOptional()
   feedback?: number;
 
-  @ApiProperty({ example: 'Recebo feedbacks construtivos que me ajudam a melhorar.', required: false })
+  @ApiProperty({ example: 'Recebo feedbacks construtivos.', required: false })
   @IsString({ message: 'comentarios_feedback must be a string' })
   comentarios_feedback?: string;
 

@@ -7,7 +7,4 @@ export class CreateEmployeeDto extends IntersectionType(
   EmployeeBaseDto,
   EmployeeEvaluationDto,
 ) {
-  @IsDateString()
-  @IsNotEmpty()
-  data_resposta: string;
 }
