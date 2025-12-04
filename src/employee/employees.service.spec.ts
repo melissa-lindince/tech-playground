@@ -60,7 +60,6 @@ describe('EmployeesService', () => {
       geracao: 'geração z',
       n0_empresa: 'Company Spy x family',
       n4_area: 'área a111',
-      data_resposta: dateString
     };
 
     describe('success', () => {
