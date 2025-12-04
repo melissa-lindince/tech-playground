@@ -74,6 +74,7 @@ export class EmployeeEvaluationDto {
 
   @ApiProperty({ example: 'Recebo feedbacks construtivos.', required: false })
   @IsString({ message: 'comentarios_feedback must be a string' })
+  @IsOptional()
   comentarios_feedback?: string;
 
 
@@ -142,7 +143,7 @@ export class EmployeeEvaluationDto {
     required: false 
   })
   @IsInt({ message: 'eNPS must be an integer' })
-  @Min(0, { message: 'eNPS must be at least 0' })
+  @Min(1, { message: 'eNPS must be at least 0' })
   @Max(10, { message: 'eNPS must be at most 10' })
   @IsOptional()
   enps?: number;

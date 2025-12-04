@@ -4,9 +4,9 @@ services:
     container_name: tech_playground_db
     restart: always
     environment:
-      POSTGRES_DB: tech_playground
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
     ports:
       - "5432:5432"
     volumes:
@@ -26,7 +26,7 @@ services:
       dockerfile: Dockerfile.dev
     command: sh -c "yarn prisma generate && yarn start:dev"
     environment:
-      DATABASE_URL: postgres://postgres:postgres@db:5432/tech_playground
+      DATABASE_URL: ${DATABASE_URL}
     volumes:
       - ./:/usr/src/backend:delegated
       - /usr/src/backend/node_modules
