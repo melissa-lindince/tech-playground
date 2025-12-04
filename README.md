@@ -12,7 +12,7 @@ Ambiente de playground para desenvolvimento com NestJS, TypeScript, Prisma e Pos
 *   **Documentação com Swagger:** Geração automática de documentação completa da API com Swagger, incluindo exemplos             reais de respostas das métricas, facilitando a exploração e testes dos endpoints.
 *   **Testes Automatizados:** Testes unitários com Jest cobrindo regras de negócio dos services.
 *   **Métricas Corporativas Agregadas:** Cálculo automático de taxa de resposta, médias Likert, favorabilidade e                 distribuição de eNPS com queries agregadas no banco
-*   **Coleta de Avaliações de Colaboradores**: Registro de respostas de pesquisa com validações de e-mail, escala Likert          (1–5), eNPS (0–10) e data automática de submissão.
+*   **Coleta de Avaliações de Colaboradores**: Registro de respostas de pesquisa com validações de e-mail, escala Likert          , eNPS (0–10) e data automática de submissão.
 
 ### Pré-requisitos
 
