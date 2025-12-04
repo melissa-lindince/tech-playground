@@ -49,7 +49,7 @@ Certifique-se de ter os seguintes itens instalados:
     **Importante**:  Se for desenvolver ou testar localmente, sempre execute o`yarn prisma generate` após `yarn install`         para gerar o Prisma Client localmente.
    
 
-4.  **Iniciar Serviços do Docker**
+3.  **Iniciar Serviços do Docker**
 
     O projeto utiliza Docker para facilitar o setup do ambiente, incluindo o backend NestJS e o banco de dados PostgreSQL. 
     Para desenvolvimento (com hot reload), execute o projeto completo com um único comando: 
@@ -68,7 +68,7 @@ Certifique-se de ter os seguintes itens instalados:
           
       -   Geração do Prisma client e inicialização do backend na porta `3000`.
   
-7.  **Iniciar a Aplicação localmente**
+4.  **Iniciar a Aplicação localmente**
 
     ```bash
     # Usando npm
@@ -80,9 +80,15 @@ Certifique-se de ter os seguintes itens instalados:
 
     A aplicação estará disponível em `http://localhost:3000`.
 
-8.  **Acessando a API**
+5.  **Acessando a API**
 
 O projeto `tech-playground` inclui o Swagger UI para exploração da API. Acesse pelo navegador:
 
 *   **Swagger UI:** `http://localhost:3000/api/docs`
+
+6.  **Acessar mais documentos referente ao projeto**
+   Para acessar mais documentos:
+       -    Arquitetura
+       -    Métricas
+       -    Tasks Concluídas
 
