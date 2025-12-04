@@ -55,7 +55,7 @@ Certifique-se de ter os seguintes itens instalados:
     Para desenvolvimento (com hot reload), execute o projeto completo com um único comando: 
 
     ```bash
-    docker-compose up -d
+    docker-compose up --build
     ```
 
     O processo automático inclui:
