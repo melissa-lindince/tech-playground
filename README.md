@@ -86,10 +86,3 @@ O projeto `tech-playground` inclui o Swagger UI para exploração da API. Acesse
 
 *   **Swagger UI:** `http://localhost:3000/api/docs`
 
-### Acessar mais documentos referente ao projeto
-   
-   Para acessar mais documentos:
-       -    Arquitetura
-       -    Métricas
-       -    Tasks Concluídas
-
